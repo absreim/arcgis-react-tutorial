@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Map } from '@esri/react-arcgis';
+import { loadCss } from 'esri-loader';
+import { WebMap, WebScene } from '@esri/react-arcgis';
+
+loadCss();
 
 ReactDOM.render(
-  <Map loaderOptions={{ css: true }} />,
+  <div style={{ width: '100vw', height: '100vh' }}>
+    <WebMap id="6627e1dd5f594160ac60f9dfc411673f" />
+    <WebScene id="f8aa0c25485a40a1ada1e4b600522681" />
+  </div>,
   document.getElementById('root'),
 );

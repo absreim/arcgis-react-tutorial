@@ -4,7 +4,8 @@
   "description": "ArcGIS tutorial adapted to work with react-arcgis",
   "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack-dev-server --open"
   },
   "author": "Brook Li",
   "license": "ISC",
@@ -22,11 +23,11 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
     "@esri/react-arcgis": "^4.0.0",
-    "http-server": "^0.11.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }
